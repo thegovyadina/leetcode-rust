@@ -1,5 +1,21 @@
 # LeetCode solutions in Rust
 
+# LeetCode Solutions in Rust
+
+## Disclaimer
+
+This repository contains my personal solutions to LeetCode problems, created for educational purposes
+and personal reference only. All problem descriptions, names, and related content
+are the property of LeetCode (https://leetcode.com/).
+
+- The solutions provided here are meant for learning and study purposes only
+- Problem statements are intentionally omitted or minimized to avoid copyright issues
+- Links to original problems are provided for proper reference
+- This is not an official LeetCode repository and is not affiliated with LeetCode
+
+If you're a LeetCode representative and have concerns about this repository,
+please contact me and I'll address them promptly.
+
 ## Problems
 
 1\. [Two Sum](https://leetcode.com/problems/two-sum/)
@@ -14,8 +30,6 @@
 
 ```rust
 //! # LeetCode Problem: [Problem Number] - [Problem Title]
-//!
-//! [Problem Description Placeholder]
 //!
 //! Difficulty: [Easy/Medium/Hard]
 //!
