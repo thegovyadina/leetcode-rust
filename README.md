@@ -2,8 +2,9 @@
 
 ## Problems
 
-1. [Two Sum](https://leetcode.com/problems/two-sum/)
-   645\. [Set Mismatch](https://leetcode.com/problems/set-mismatch/)
+1\. [Two Sum](https://leetcode.com/problems/two-sum/)
+
+645\. [Set Mismatch](https://leetcode.com/problems/set-mismatch/)
 
 ## How to add a new problem
 
