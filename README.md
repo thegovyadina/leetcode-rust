@@ -28,6 +28,8 @@ Note that this license applies only to my solution code and not to the LeetCode 
 
 1974\. [Minimum Time to Type Word Using Special Typewriter](https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/) -> [Solution](src/problems/p1974_minimum_time_to_type_word_using_special_typewriter.rs)
 
+3174\. [Clear digits](https://leetcode.com/problems/clear-digits/) -> [Solution](src/problems/p3174_clear_digits.rs)
+
 ## How to add a new problem
 
 1. Create a new file in `src/` directory with the name of the problem in snake_case with format

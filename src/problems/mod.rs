@@ -1,3 +1,4 @@
 pub mod p0001_two_sum;
 pub mod p0645_set_mismatch;
 pub mod p1974_minimimum_time_to_type_word_using_special_typewriter;
+pub mod p3174_clear_digits;
