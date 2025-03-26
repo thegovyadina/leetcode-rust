@@ -22,11 +22,11 @@ Note that this license applies only to my solution code and not to the LeetCode 
 
 ## Problems
 
-1\. [Two Sum](https://leetcode.com/problems/two-sum/)
+1\. [Two Sum](https://leetcode.com/problems/two-sum/) -> [Solution](src/problems/p0001_two_sum.rs)
 
-645\. [Set Mismatch](https://leetcode.com/problems/set-mismatch/)
+645\. [Set Mismatch](https://leetcode.com/problems/set-mismatch/) -> [Solution](src/problems/p0645_set_mismatch.rs)
 
-1974\. [Minimum Time to Type Word Using Special Typewriter](https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/)
+1974\. [Minimum Time to Type Word Using Special Typewriter](https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/) -> [Solution](src/problems/p1974_minimum_time_to_type_word_using_special_typewriter.rs)
 
 ## How to add a new problem
 
@@ -73,7 +73,7 @@ where `<XXXX>` is the number of the problem on LeetCode and `problem_title` is t
 4. Add the problem to the list in `README.md` with the following format:
 
 ```markdown
-N\. [Problem Title](https://leetcode.com/problems/problem-slug/)
+N\. [Problem Title](https://leetcode.com/problems/problem-slug/) -> [Solution](src/problems/pXXXX_problem_title.rs)
 ```
 
 where N is the number of the problem on LeetCode.
