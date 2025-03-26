@@ -26,6 +26,8 @@ Note that this license applies only to my solution code and not to the LeetCode 
 
 645\. [Set Mismatch](https://leetcode.com/problems/set-mismatch/)
 
+1974\. [Minimum Time to Type Word Using Special Typewriter] (https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/)
+
 ## How to add a new problem
 
 1. Create a new file in `src/` directory with the name of the problem in snake_case with format
