@@ -3,7 +3,7 @@
 ## Problems
 
 1. [Two Sum](https://leetcode.com/problems/two-sum/)
-645. [Set Mismatch](https://leetcode.com/problems/set-mismatch/)
+   645\. [Set Mismatch](https://leetcode.com/problems/set-mismatch/)
 
 ## How to add a new problem
 
@@ -52,10 +52,13 @@ where `<XXXX>` is the number of the problem on LeetCode and `problem_title` is t
 4. Add the problem to the list in `README.md` with the following format:
 
 ```markdown
-N. [Problem Title](https://leetcode.com/problems/problem-slug/)
+N\. [Problem Title](https://leetcode.com/problems/problem-slug/)
 ```
 
 where N is the number of the problem on LeetCode.
+
+Backslash is used to escape the dot in the list item to prevent it from being interpreted as a numbered list,
+as markdown will automatically renumber the list items.
 
 5. Run the tests with `cargo test` to make sure everything is working.
 6. Commit your changes.
