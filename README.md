@@ -2,7 +2,7 @@ LeetCode solutions in Rust
 
 ## Problems
 
-- [Two Sum](src/two_sum.rs)
+- [Two Sum](src/problems/p0001_two_sum.rs)
 
 ## How to add a new problem
 
