@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# Auto-formatting code
+cargo fmt -- --check
+if [ $? -ne 0 ]; then
+    echo "Error: Code is not formatted. Run 'cargo fmt' before committing."
+    exit 1
+fi
+
+# Static code analysis
+cargo clippy -- -D warnings
+if [ $? -ne 0 ]; then
+    echo "Error: Clippy found issues. Fix them before committing."
+    exit 1
+fi

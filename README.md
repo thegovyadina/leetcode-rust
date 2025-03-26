@@ -2,7 +2,7 @@ LeetCode solutions in Rust
 
 ## Problems
 
-- [Two Sum](src/problems/p0001_two_sum.rs)
+1. [Two Sum](https://leetcode.com/problems/two-sum/)
 
 ## How to add a new problem
 
@@ -11,6 +11,14 @@ LeetCode solutions in Rust
 2. Use the following template for the file:
 
 ```rust
+//! # LeetCode Problem: [Problem Number] - [Problem Title]
+//!
+//! [Problem Description Placeholder]
+//!
+//! Difficulty: [Easy/Medium/Hard]
+//!
+//! Link: https://leetcode.com/problems/[problem-slug]/
+
 pub struct Solution;
 
 // Copy the problem title from LeetCode
@@ -20,7 +28,7 @@ impl Solution {
     }
 }
 
-// Tests
+// Tests are written in the same file and are mandatory
 #[cfg(test)]
 mod tests {
     use super::Solution;
@@ -35,8 +43,10 @@ mod tests {
 3. Add the problem to the list in `README.md` with the following format:
 
 ```markdown
-- [Problem Title](src/p<XXXX>_problem_title.rs)
+N. [Problem Title](https://leetcode.com/problems/problem-slug/)
 ```
+
+where N is the number of the problem on LeetCode.
 
 4. Run the tests with `cargo test` to make sure everything is working.
 5. Commit your changes.
