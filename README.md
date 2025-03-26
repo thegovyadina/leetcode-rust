@@ -1,7 +1,5 @@
 # LeetCode solutions in Rust
 
-# LeetCode Solutions in Rust
-
 ## Disclaimer
 
 This repository contains my personal solutions to LeetCode problems, created for educational purposes
@@ -15,6 +13,12 @@ are the property of LeetCode (https://leetcode.com/).
 
 If you're a LeetCode representative and have concerns about this repository,
 please contact me and I'll address them promptly.
+
+## License
+
+This repository is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+Note that this license applies only to my solution code and not to the LeetCode problem statements themselves.
 
 ## Problems
 
