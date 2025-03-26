@@ -1,8 +1,9 @@
-LeetCode solutions in Rust
+# LeetCode solutions in Rust
 
 ## Problems
 
 1. [Two Sum](https://leetcode.com/problems/two-sum/)
+645. [Set Mismatch](https://leetcode.com/problems/set-mismatch/)
 
 ## How to add a new problem
 
@@ -40,7 +41,15 @@ mod tests {
 }
 ```
 
-3. Add the problem to the list in `README.md` with the following format:
+3. Update the `lib.rs` file to include the new problem file. Add the following line at the end of the file:
+
+```rust
+mod p < XXXX>_problem_title;
+```
+
+where `<XXXX>` is the number of the problem on LeetCode and `problem_title` is the name of the problem in snake_case.
+
+4. Add the problem to the list in `README.md` with the following format:
 
 ```markdown
 N. [Problem Title](https://leetcode.com/problems/problem-slug/)
@@ -48,5 +57,5 @@ N. [Problem Title](https://leetcode.com/problems/problem-slug/)
 
 where N is the number of the problem on LeetCode.
 
-4. Run the tests with `cargo test` to make sure everything is working.
-5. Commit your changes.
+5. Run the tests with `cargo test` to make sure everything is working.
+6. Commit your changes.
