@@ -26,7 +26,9 @@ Note that this license applies only to my solution code and not to the LeetCode 
 
 645\. [Set Mismatch](https://leetcode.com/problems/set-mismatch/) -> [Solution](src/problems/p0645_set_mismatch.rs)
 
-1974\. [Minimum Time to Type Word Using Special Typewriter](https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/) -> [Solution](src/problems/p1974_minimum_time_to_type_word_using_special_typewriter.rs)
+1974\. [Minimum Time to Type Word Using Special Typewriter](https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/) -> [Solution](src/problems/p1974_minimimum_time_to_type_word_using_special_typewriter.rs)
+
+2399\. [Check Distances Between Same Letters](https://leetcode.com/problems/check-distances-between-same-letters/) -> [Solution](src/problems/p2399_check_distances_between_same_letters.rs)
 
 3174\. [Clear digits](https://leetcode.com/problems/clear-digits/) -> [Solution](src/problems/p3174_clear_digits.rs)
 
