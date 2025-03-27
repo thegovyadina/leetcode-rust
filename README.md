@@ -30,6 +30,9 @@ Note that this license applies only to my solution code and not to the LeetCode 
 1137\. [N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/) -> [Solution](src/problems/p1137_nth_tribonacci_number.rs)
 
 🟢
+1784\. [Check if Binary String Has at Most One Segment of Ones](https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/) -> [Solution](src/problems/p1784_check_if_binary_string_has_at_most_one_segment_of_ones.rs)
+
+🟢
 1974\. [Minimum Time to Type Word Using Special Typewriter](https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/) -> [Solution](src/problems/p1974_minimimum_time_to_type_word_using_special_typewriter.rs)
 
 🟢
