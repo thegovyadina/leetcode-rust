@@ -30,6 +30,8 @@ Note that this license applies only to my solution code and not to the LeetCode 
 
 1974\. [Minimum Time to Type Word Using Special Typewriter](https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/) -> [Solution](src/problems/p1974_minimimum_time_to_type_word_using_special_typewriter.rs)
 
+2099\. [Find Subsequence of Length K With the Largest Sum](https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum/) -> [Solution](src/problems/p2099_find_subsequence_of_length_k_with_the_largest_sum.rs)
+
 2399\. [Check Distances Between Same Letters](https://leetcode.com/problems/check-distances-between-same-letters/) -> [Solution](src/problems/p2399_check_distances_between_same_letters.rs)
 
 3174\. [Clear digits](https://leetcode.com/problems/clear-digits/) -> [Solution](src/problems/p3174_clear_digits.rs)

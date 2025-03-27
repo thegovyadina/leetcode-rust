@@ -2,5 +2,6 @@ pub mod p0001_two_sum;
 pub mod p0645_set_mismatch;
 pub mod p1137_nth_tribonacci_number;
 pub mod p1974_minimimum_time_to_type_word_using_special_typewriter;
+pub mod p2099_find_subsequence_of_length_k_with_the_largest_sum;
 pub mod p2399_check_distances_between_same_letters;
 pub mod p3174_clear_digits;
