@@ -3,6 +3,10 @@
 //! Difficulty: Easy
 //!
 //! Link: https://leetcode.com/problems/clear-digits/
+//!
+//! ## Complexity Analysis
+//! - Time Complexity: O(n) - We traverse the list containing n elements exactly once.
+//! - Space Complexity: O(n) - We use a vector to store the result.
 
 pub struct Solution;
 

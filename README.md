@@ -44,6 +44,10 @@ Note that this license applies only to my solution code and not to the LeetCode 
 //! Difficulty: [Easy/Medium/Hard]
 //!
 //! Link: https://leetcode.com/problems/[problem-slug]/
+//!
+//! ## Complexity Analysis
+//! - Time Complexity: O(n) - Describe the time complexity of your solution.
+//! - Space Complexity: O(n) - Describe the space complexity of your solution.
 
 pub struct Solution;
 
@@ -65,6 +69,9 @@ mod tests {
     }
 }
 ```
+
+Complexity analysis is optional but recommended. If you're not sure about the complexity of your solution,
+you can leave it out.
 
 3. Update the `lib.rs` file to include the new problem file. Add the following line at the end of the file:
 

@@ -3,6 +3,10 @@
 //! Difficulty: Easy
 //!
 //! Link: https://leetcode.com/problems/check-distances-between-same-letters/
+//!
+//! ## Complexity Analysis
+//! - Time Complexity: O(n) - We traverse the list containing n elements exactly once.
+//! - Space Complexity: O(1) - We use a constant amount of extra space.
 
 pub struct Solution;
 
