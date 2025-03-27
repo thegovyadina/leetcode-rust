@@ -12,11 +12,20 @@ pub struct Solution;
 
 impl Solution {
     pub fn check_ones_segment(s: String) -> bool {
+        // The official description is the most difficult part of the problem.
+        // The point is to check if there is "01" substring in the string.
+        // The shortest implementation is the following:
+        //
+        //     pub fn check_ones_segment(s: String) -> bool {
+        //         !s.contains("01")
+        //      }
+        //
+        // That's it!
+        //
+        // However, here I pretend that I don't know this function.
         if s.len() == 1 && s == "0" {
             return false;
         }
-        // The official description is the most difficult part of the problem.
-        // The point is to check if there is "01" substring in the string.
         let mut previous = '1';
         for char in s.chars() {
             if char == '1' && previous == '0' {
