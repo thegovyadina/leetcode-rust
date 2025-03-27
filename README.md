@@ -33,6 +33,9 @@ Note that this license applies only to my solution code and not to the LeetCode 
 1784\. [Check if Binary String Has at Most One Segment of Ones](https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/) -> [Solution](src/problems/p1784_check_if_binary_string_has_at_most_one_segment_of_ones.rs)
 
 🟢
+1876\. [Substrings of Size Three with Distinct Characters](https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/) -> [Solution](src/problems/p1876_substrings_of_size_three_with_distinct_characters.rs)
+
+🟢
 1974\. [Minimum Time to Type Word Using Special Typewriter](https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/) -> [Solution](src/problems/p1974_minimimum_time_to_type_word_using_special_typewriter.rs)
 
 🟢
