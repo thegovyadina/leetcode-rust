@@ -1,5 +1,6 @@
 pub mod p0001_two_sum;
 pub mod p0645_set_mismatch;
+pub mod p0797_all_paths_from_source_to_target;
 pub mod p1137_nth_tribonacci_number;
 pub mod p1431_kids_with_the_greatest_number_of_candies;
 pub mod p1784_check_if_binary_string_has_at_most_one_segment_of_ones;

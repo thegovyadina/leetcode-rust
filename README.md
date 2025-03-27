@@ -26,6 +26,9 @@ Note that this license applies only to my solution code and not to the LeetCode 
 
 🟢 645\. [Set Mismatch](https://leetcode.com/problems/set-mismatch/) -> [Solution](src/problems/p0645_set_mismatch.rs)
 
+🟠
+797\. [All Paths From Source to Target](https://leetcode.com/problems/all-paths-from-source-to-target/) -> [Solution](src/problems/p0797_all_paths_from_source_to_target.rs)
+
 🟢
 1137\. [N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/) -> [Solution](src/problems/p1137_nth_tribonacci_number.rs)
 
