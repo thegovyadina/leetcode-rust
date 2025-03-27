@@ -48,7 +48,7 @@ mod tests {
             let result = Solution::max_subsequence(nums.clone(), *k);
             assert_eq!(
                 result, *expected,
-                "Test case #{}: with input string {:?} and distance {:?}, expected {:?}, got {:?}",
+                "Test case #{}: with nums={:?} and k={:?}, expected {:?}, got {:?}",
                 idx, nums, k, expected, result
             );
         }

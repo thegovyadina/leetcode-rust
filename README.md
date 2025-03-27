@@ -30,6 +30,9 @@ Note that this license applies only to my solution code and not to the LeetCode 
 1137\. [N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/) -> [Solution](src/problems/p1137_nth_tribonacci_number.rs)
 
 🟢
+1431\. [Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/) -> [Solution](src/problems/p1431_kids_with_the_greatest_number_of_candies.rs)
+
+🟢
 1784\. [Check if Binary String Has at Most One Segment of Ones](https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/) -> [Solution](src/problems/p1784_check_if_binary_string_has_at_most_one_segment_of_ones.rs)
 
 🟢

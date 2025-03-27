@@ -1,6 +1,7 @@
 pub mod p0001_two_sum;
 pub mod p0645_set_mismatch;
 pub mod p1137_nth_tribonacci_number;
+pub mod p1431_kids_with_the_greatest_number_of_candies;
 pub mod p1784_check_if_binary_string_has_at_most_one_segment_of_ones;
 pub mod p1876_substrings_of_size_three_with_distinct_characters;
 pub mod p1974_minimimum_time_to_type_word_using_special_typewriter;
