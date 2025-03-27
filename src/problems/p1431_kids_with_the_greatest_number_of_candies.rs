@@ -5,8 +5,8 @@
 //! Link: https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
 //!
 //! ## Complexity Analysis
-//! - Time Complexity:
-//! - Space Complexity:
+//! - Time Complexity: O(n) - We traverse the list containing n elements exactly once.
+//! - Space Complexity: O(n) - We use a vector to store the result.
 
 pub struct Solution;
 
