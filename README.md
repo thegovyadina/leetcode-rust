@@ -24,6 +24,9 @@ Note that this license applies only to my solution code and not to the LeetCode 
 
 🟢 1\.  [Two Sum](https://leetcode.com/problems/two-sum/) -> [Solution](src/problems/p0001_two_sum.rs)
 
+🟠
+227\.  [Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/) -> [Solution](src/problems/p0227_basic_calculator_2.rs)
+
 🟢 645\. [Set Mismatch](https://leetcode.com/problems/set-mismatch/) -> [Solution](src/problems/p0645_set_mismatch.rs)
 
 🟠
