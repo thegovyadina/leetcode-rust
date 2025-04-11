@@ -58,7 +58,9 @@ Note that this license applies only to my solution code and not to the LeetCode 
 ## How to add a new problem
 
 1. Create a new file in `src/problems/` directory with the name of the problem in snake_case with format
-   `p<XXXX>_problem_title.rs`.
+   `pNNNN_problem_title.rs`, where `NNNN` is the number of the problem on LeetCode and `problem_title`
+   is the name of the problem in snake_case.
+
 2. Use the following template for the file:
 
 ```rust
@@ -99,10 +101,8 @@ you can leave it out.
 3. Update the `lib.rs` file to include the new problem file. Add the following line at the end of the file:
 
 ```rust
-pub mod p < XXXX>_problem_title;
+pub mod pNNNN_problem_title;
 ```
-
-where `<XXXX>` is the number of the problem on LeetCode and `problem_title` is the name of the problem in snake_case.
 
 4. Add the problem to the list in `README.md` with the following format:
 
