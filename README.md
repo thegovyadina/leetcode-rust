@@ -99,7 +99,7 @@ you can leave it out.
 3. Update the `lib.rs` file to include the new problem file. Add the following line at the end of the file:
 
 ```rust
-mod p < XXXX>_problem_title;
+pub mod p < XXXX>_problem_title;
 ```
 
 where `<XXXX>` is the number of the problem on LeetCode and `problem_title` is the name of the problem in snake_case.
