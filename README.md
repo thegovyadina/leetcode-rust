@@ -57,7 +57,7 @@ Note that this license applies only to my solution code and not to the LeetCode 
 
 ## How to add a new problem
 
-1. Create a new file in `src/` directory with the name of the problem in snake_case with format
+1. Create a new file in `src/problems/` directory with the name of the problem in snake_case with format
    `p<XXXX>_problem_title.rs`.
 2. Use the following template for the file:
 
