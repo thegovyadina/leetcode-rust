@@ -10,6 +10,7 @@
 
 pub struct Solution;
 
+#[allow(clippy::needless_range_loop)]
 impl Solution {
     pub fn find_error_nums(nums: Vec<i32>) -> Vec<i32> {
         let mut nums = nums;
