@@ -6,7 +6,7 @@
 //!
 //! ## Complexity Analysis
 //! - Time Complexity: O(max_value * log(max_value) + n * log(max_value))
-//! - Space Complexity: O(n) - We use a 2D vector for dynamic programming.
+//! - Space Complexity: O(max_value * log(max_value) + n × log(max_value))
 //!
 //! ## A bit of theory
 //!
