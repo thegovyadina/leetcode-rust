@@ -8,5 +8,6 @@ pub mod p1784_check_if_binary_string_has_at_most_one_segment_of_ones;
 pub mod p1876_substrings_of_size_three_with_distinct_characters;
 pub mod p1974_minimimum_time_to_type_word_using_special_typewriter;
 pub mod p2099_find_subsequence_of_length_k_with_the_largest_sum;
+pub mod p2338_count_the_number_of_ideal_arrays;
 pub mod p2399_check_distances_between_same_letters;
 pub mod p3174_clear_digits;

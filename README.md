@@ -50,6 +50,9 @@ Note that this license applies only to my solution code and not to the LeetCode 
 🟢
 2099\. [Find Subsequence of Length K With the Largest Sum](https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum/) -> [Solution](src/problems/p2099_find_subsequence_of_length_k_with_the_largest_sum.rs)
 
+🔴
+2338\. [Count the Number of Ideal Arrays](https://leetcode.com/problems/count-the-number-of-ideal-arrays/) -> [Solution](src/problems/p2338_count_the_number_of_ideal_arrays.rs)
+
 🟢
 2399\. [Check Distances Between Same Letters](https://leetcode.com/problems/check-distances-between-same-letters/) -> [Solution](src/problems/p2399_check_distances_between_same_letters.rs)
 
