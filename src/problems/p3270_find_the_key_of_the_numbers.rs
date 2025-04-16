@@ -12,20 +12,16 @@ pub struct Solution;
 
 impl Solution {
     pub fn generate_key(num1: i32, num2: i32, num3: i32) -> i32 {
-        // Start with the highest possible digit (9) for each position
         let mut thousands = 9;
         let mut hundreds = 9;
         let mut tens = 9;
         let mut units = 9;
-
-        // Find minimum digits without creating unnecessary iterator
         for &n in &[num1, num2, num3] {
             thousands = thousands.min(n / 1000 % 10);
             hundreds = hundreds.min(n / 100 % 10);
             tens = tens.min(n / 10 % 10);
             units = units.min(n % 10);
         }
-        // Construct the result
         thousands * 1000 + hundreds * 100 + tens * 10 + units
     }
 }
