@@ -6,7 +6,7 @@
 //!
 //! ## Complexity Analysis
 //! - Time Complexity: O(max_value * log(max_value) + n * log(max_value))
-//! - Space Complexity: O(max_value * log(max_value) + n × log(max_value))
+//! - Space Complexity: O(max_value * log(max_value) + n * log(max_value))
 //!
 //! ## A bit of theory
 //!
