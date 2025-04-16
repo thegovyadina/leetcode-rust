@@ -58,6 +58,9 @@ Note that this license applies only to my solution code and not to the LeetCode 
 
 🟢 3174\. [Clear digits](https://leetcode.com/problems/clear-digits/) -> [Solution](src/problems/p3174_clear_digits.rs)
 
+🟢
+3270\. [Find the Key of the Numbers](https://leetcode.com/problems/find-the-key-of-the-numbers/) -> [Solution](src/problems/p3270_find_the_key_of_the_numbers.rs)
+
 ## How to add a new problem
 
 1. Create a new file in `src/problems/` directory with the name of the problem in snake_case with format
