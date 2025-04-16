@@ -30,7 +30,7 @@
 //!         we can place `n-1` identical objects into `len` distinct boxes, which represents
 //!         how many ways we can have a sequence with `len` unique values in an array of length `n`.
 //! 3. **Optimization Bounds**:
-//!         The maximum number of unique elements in any ideal array is bounded by log(maxValue),
+//!         The maximum number of unique elements in any ideal array is bounded by log₂(maxValue),
 //!         since each next value must be at least twice the previous one.
 pub struct Solution;
 
