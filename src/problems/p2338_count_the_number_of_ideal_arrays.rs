@@ -106,10 +106,27 @@ impl Solution {
         // "i choose j" - the number of ways to choose j items from i items
         let mut comb = vec![vec![0i64; max_unique + 1]; (n + 1) as usize];
         for i in 0..=n as usize {
+            // This sets the base case: for any number of elements `i`, there is exactly 1 way
+            // to choose 0 elements (the empty set). So `comb[i][0] = 1` for all `i`.
             comb[i][0] = 1;
             for j in 1..=i.min(max_unique) {
                 // `comb[i][j] = comb[i-1][j-1] + comb[i-1][j]`
                 // is the standard recursive formula for Pascal's triangle
+                // This formula means, that the number of ways to choose
+                // `j` items from `i` items is:
+                // - The number of ways to choose `j-1` items from `i-1` items
+                // (and then include the `i`th item)
+                // - Plus the number of ways to choose `j` items from `i-1` items
+                // (and exclude the `i`th item)
+                //
+                // As a result, we can build the combinatorial table of type:
+                // [1,  0,  0,  0,  0,  0, ...]
+                // [1,  1,  0,  0,  0,  0, ...]
+                // [1,  2,  1,  0,  0,  0, ...]
+                // [1,  3,  3,  1,  0,  0, ...]
+                // [1,  4,  6,  4,  1,  0, ...]
+                // [1,  5, 10, 10,  5,  1, ...]
+                // which represents the Pascal's triangle
                 comb[i][j] = (comb[i - 1][j - 1] + comb[i - 1][j]) % MOD;
             }
         }
@@ -118,7 +135,7 @@ impl Solution {
         let mut result = 0i64;
         for len in 1..=max_unique {
             let mut count = 0i64;
-            // Sum up all strictly increasing sequences of length len
+            // Sum up all strictly increasing sequences of length `len` (from Step 1)
             for last in 1..=max_value {
                 count = (count + dp[len][last]) % MOD;
             }
@@ -126,6 +143,15 @@ impl Solution {
             // Using stars and bars: ways to place n-1 balls into len slots
             // C(n-1, len-1) = number of ways to have len unique elements in array of length n
             if n > 1 {
+                // The multiplication is necessary because:
+                // - **What represents`count`**:
+                //      The count of unique strictly increasing sequences of length `len`
+                // - **What the combinatorial represents**:
+                //      The number of ways to **"stretch"** each of those sequences
+                //      into an array of length `n`
+                // For each strictly increasing sequence of length `len`,
+                // there are `comb[(n - 1) as usize][len - 1]` different ways to represent it
+                // in an array of length `n`.
                 count = (count * comb[(n - 1) as usize][len - 1]) % MOD;
             }
 
