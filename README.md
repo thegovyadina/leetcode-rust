@@ -16,7 +16,7 @@ please contact me and I'll address them promptly.
 
 ## License
 
-This repository is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This repository is licensed under the MIT License—see the [LICENSE](LICENSE) file for details.
 
 Note that this license applies only to my solution code and not to the LeetCode problem statements themselves.
 
@@ -40,6 +40,9 @@ Note that this license applies only to my solution code and not to the LeetCode 
 
 🟢
 1431\. [Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/) -> [Solution](src/problems/p1431_kids_with_the_greatest_number_of_candies.rs)
+
+🟢
+1464\. [Maximum Product of Two Elements in an Array](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/) -> [Solution](src/problems/p1464_maximum_product_of_two_elements_in_an_array.rs)
 
 🟢
 1784\. [Check if Binary String Has at Most One Segment of Ones](https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/) -> [Solution](src/problems/p1784_check_if_binary_string_has_at_most_one_segment_of_ones.rs)
@@ -122,7 +125,7 @@ N\. [Problem Title](https://leetcode.com/problems/problem-slug/) -> [Solution](s
 where N is the number of the problem on LeetCode.
 
 Backslash is used to escape the dot in the list item to prevent it from being interpreted as a numbered list,
-as markdown will automatically renumber the list items.
+as Markdown will automatically renumber the list items.
 
 Emojis are used to indicate the difficulty level of the problem:
 

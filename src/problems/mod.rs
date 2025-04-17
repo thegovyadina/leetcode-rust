@@ -5,6 +5,7 @@ pub mod p0797_all_paths_from_source_to_target;
 pub mod p0905_sort_array_by_parity;
 pub mod p1137_nth_tribonacci_number;
 pub mod p1431_kids_with_the_greatest_number_of_candies;
+pub mod p1464_maximum_product_of_two_elements_in_an_array;
 pub mod p1784_check_if_binary_string_has_at_most_one_segment_of_ones;
 pub mod p1876_substrings_of_size_three_with_distinct_characters;
 pub mod p1974_minimimum_time_to_type_word_using_special_typewriter;
