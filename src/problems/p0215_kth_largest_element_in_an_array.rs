@@ -5,9 +5,13 @@
 //! Link: https://leetcode.com/problems/kth-largest-element-in-an-array/
 //!
 //! ## Complexity Analysis
-//! - Time Complexity: O(n) - We use the `select_nth_unstable` method, which is an O(n) algorithm.
+//! - Time Complexity: O(n) - The `select_nth_unstable` is claimed to be O(n) for all inputs due to
+//!   a fallback mechanism (refer to the Rust documentation for `select_nth_unstable`).
 //! - Space Complexity: O(1) - We do not use any additional space that grows with the input size.
-
+//!
+//! One of the best explanations of the approaches Sort and Select, Min-Heap, Quickselect is given
+//! by `vanAmsen` on LeetCode:
+//! https://leetcode.com/problems/kth-largest-element-in-an-array/solutions/3906260/100-3-approaches-video-heap-quickselect-sorting/
 pub struct Solution;
 
 impl Solution {
