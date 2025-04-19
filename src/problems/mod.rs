@@ -15,5 +15,6 @@ pub mod p2099_find_subsequence_of_length_k_with_the_largest_sum;
 pub mod p2338_count_the_number_of_ideal_arrays;
 pub mod p2399_check_distances_between_same_letters;
 pub mod p2442_count_number_of_distinct_integers_after_reverse_operations;
+pub mod p2933_high_access_employees;
 pub mod p3174_clear_digits;
 pub mod p3270_find_the_key_of_the_numbers;
