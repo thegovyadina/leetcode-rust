@@ -1,6 +1,8 @@
 # LeetCode solutions in Rust
 
 [![Rust checks and tests](https://github.com/thegovyadina/leetcode-rust/actions/workflows/rust.yml/badge.svg?event=push)](https://github.com/thegovyadina/leetcode-rust/actions/workflows/rust.yml)
+[![Commit Activity](https://img.shields.io/github/commit-activity/m/thegovyadina/leetcode-rust)](https://github.com/thegovyadina/leetcode-rust/commits/main)
+
 
 <!-- LEETCODE-BADGES:START -->
 ![Easy](https://img.shields.io/badge/Easy-16-brightgreen) ![Medium](https://img.shields.io/badge/Medium-9-orange) ![Hard](https://img.shields.io/badge/Hard-1-red) ![Total](https://img.shields.io/badge/Total-26-blue)
