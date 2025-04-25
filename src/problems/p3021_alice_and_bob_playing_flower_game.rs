@@ -6,7 +6,7 @@
 //!
 //! ## Complexity Analysis
 //! - Time Complexity: O(1) - The solution runs in constant time since it only involves basic
-//! arithmetic operations.
+//!         arithmetic operations.
 //! - Space Complexity: O(1) - The solution uses a constant amount of space for variables.
 
 pub struct Solution;
