@@ -1,0 +1,60 @@
+name: Update LeetCode Problem Count
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'src/problems/**'
+  workflow_dispatch:
+
+jobs:
+  update-count:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Count problems by difficulty
+        id: count
+        run: |
+          easy=$(grep -r "Difficulty: Easy" src/problems/ | wc -l)
+          medium=$(grep -r "Difficulty: Medium" src/problems/ | wc -l)
+          hard=$(grep -r "Difficulty: Hard" src/problems/ | wc -l)
+          total=$((easy + medium + hard))
+          
+          echo "easy=$easy" >> $GITHUB_OUTPUT
+          echo "medium=$medium" >> $GITHUB_OUTPUT
+          echo "hard=$hard" >> $GITHUB_OUTPUT
+          echo "total=$total" >> $GITHUB_OUTPUT
+
+      - name: Update README
+        env:
+          EASY: ${{ steps.count.outputs.easy }}
+          MEDIUM: ${{ steps.count.outputs.medium }}
+          HARD: ${{ steps.count.outputs.hard }}
+          TOTAL: ${{ steps.count.outputs.total }}
+        run: |
+          # Create updated badge links
+          EASY_BADGE="![Easy](https://img.shields.io/badge/Easy-$EASY-brightgreen)"
+          MEDIUM_BADGE="![Medium](https://img.shields.io/badge/Medium-$MEDIUM-orange)"
+          HARD_BADGE="![Hard](https://img.shields.io/badge/Hard-$HARD-red)"
+          TOTAL_BADGE="![Total](https://img.shields.io/badge/Total-$TOTAL-blue)"
+          
+          # Find badge section and update it
+          if grep -q "<!-- LEETCODE-BADGES:START -->" README.md; then
+            # Update existing badge section
+            sed -i '/<!-- LEETCODE-BADGES:START -->/,/<!-- LEETCODE-BADGES:END -->/c\<!-- LEETCODE-BADGES:START -->\n'"$EASY_BADGE $MEDIUM_BADGE $HARD_BADGE $TOTAL_BADGE"'\n<!-- LEETCODE-BADGES:END -->' README.md
+          else
+            # Insert badge section after title if it doesn't exist
+            sed -i '1,/LeetCode solutions in Rust/!b;/LeetCode solutions in Rust/a\\\n<!-- LEETCODE-BADGES:START -->\n'"$EASY_BADGE $MEDIUM_BADGE $HARD_BADGE $TOTAL_BADGE"'\n<!-- LEETCODE-BADGES:END -->' README.md
+          fi
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git add README.md
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update LeetCode problem counts"
+          git push
