@@ -1,5 +1,7 @@
 # LeetCode solutions in Rust
 
+[![Rust checks and tests](https://github.com/thegovyadina/leetcode-rust/actions/workflows/rust.yml/badge.svg)](https://github.com/YOUR_USERNAME/leetcode-rust/actions/workflows/rust.yml)
+
 ## Disclaimer
 
 This repository contains my personal solutions to LeetCode problems, created for educational purposes
