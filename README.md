@@ -3,7 +3,7 @@
 [![Rust checks and tests](https://github.com/thegovyadina/leetcode-rust/actions/workflows/rust.yml/badge.svg?event=push)](https://github.com/thegovyadina/leetcode-rust/actions/workflows/rust.yml)
 
 <!-- LEETCODE-BADGES:START -->
-<!-- Badges will be automatically inserted here -->
+![Easy](https://img.shields.io/badge/Easy-16-brightgreen) ![Medium](https://img.shields.io/badge/Medium-9-orange) ![Hard](https://img.shields.io/badge/Hard-1-red) ![Total](https://img.shields.io/badge/Total-26-blue)
 <!-- LEETCODE-BADGES:END -->
 
 ## Disclaimer
