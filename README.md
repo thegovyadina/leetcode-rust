@@ -1,6 +1,7 @@
 # LeetCode solutions in Rust
 
 [![Rust checks and tests](https://github.com/thegovyadina/leetcode-rust/actions/workflows/rust.yml/badge.svg?event=push)](https://github.com/thegovyadina/leetcode-rust/actions/workflows/rust.yml)
+[![LeetCode Problems](https://img.shields.io/badge/LeetCode-Problems%20Solved-brightgreen.svg)](https://github.com/thegovyadina/leetcode-rust#problems)
 
 ## Disclaimer
 
