@@ -37,10 +37,10 @@ jobs:
           TOTAL: ${{ steps.count.outputs.total }}
         run: |
           # Create updated badge links
-          EASY_BADGE="![Easy](https://img.shields.io/badge/Easy-$EASY-brightgreen)"
-          MEDIUM_BADGE="![Medium](https://img.shields.io/badge/Medium-$MEDIUM-orange)"
-          HARD_BADGE="![Hard](https://img.shields.io/badge/Hard-$HARD-red)"
-          TOTAL_BADGE="![Total](https://img.shields.io/badge/Total-$TOTAL-blue)"
+          EASY_BADGE="[![Easy](https://img.shields.io/badge/Easy-$EASY-brightgreen)](#problems)"
+          MEDIUM_BADGE="[![Medium](https://img.shields.io/badge/Medium-$MEDIUM-orange)](#problems)"
+          HARD_BADGE="[![Hard](https://img.shields.io/badge/Hard-$HARD-red)](#problems)"
+          TOTAL_BADGE="[![Total](https://img.shields.io/badge/Total-$TOTAL-blue)](#problems)"
           
           # Find badge section and update it
           if grep -q "<!-- LEETCODE-BADGES:START -->" README.md; then
