@@ -19,11 +19,8 @@ impl Solution {
 
         // Create an extended array to handle circular sequences
         let mut extended_colors = colors.clone();
-        for i in 0..k - 1 {
-            if i < n {
-                extended_colors.push(colors[i]);
-            }
-        }
+        // Extend with elements from the start of colors, up to min(k-1, n)
+        extended_colors.extend(colors.iter().take(std::cmp::min(k - 1, n)).cloned());
 
         let length = extended_colors.len();
         let mut result = 0;
