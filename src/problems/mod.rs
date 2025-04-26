@@ -21,6 +21,7 @@ pub mod p2399_check_distances_between_same_letters;
 pub mod p2442_count_number_of_distinct_integers_after_reverse_operations;
 pub mod p2471_minimum_number_of_operations_to_sort_a_binary_tree_by_level;
 pub mod p2933_high_access_employees;
+pub mod p2940_find_building_where_alice_and_bob_can_meet;
 pub mod p3021_alice_and_bob_playing_flower_game;
 pub mod p3174_clear_digits;
 pub mod p3270_find_the_key_of_the_numbers;
