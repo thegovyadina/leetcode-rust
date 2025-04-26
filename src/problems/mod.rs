@@ -5,6 +5,7 @@ pub mod p0021_merge_two_sorted_lists;
 pub mod p0033_search_in_rotated_sorted_array;
 pub mod p0215_kth_largest_element_in_an_array;
 pub mod p0227_basic_calculator_2;
+pub mod p0504_base_7;
 pub mod p0645_set_mismatch;
 pub mod p0797_all_paths_from_source_to_target;
 pub mod p0905_sort_array_by_parity;
