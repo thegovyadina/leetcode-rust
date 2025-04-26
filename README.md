@@ -61,6 +61,7 @@ Note that this license applies only to my solution code and not to the LeetCode 
 | 🔴 2940. [Find Building Where Alice and Bob Can Meet](https://leetcode.com/problems/find-building-where-alice-and-bob-can-meet/)                                   |         [🦀](src/problems/p2940_find_building_where_alice_and_bob_can_meet.rs)          |
 | 🟠 3021. [Alice and Bob Playing Flower Game](https://leetcode.com/problems/alice-and-bob-playing-flower-game/)                                                     |              [🦀](src/problems/p3021_alice_and_bob_playing_flower_game.rs)              |
 | 🟢 3174. [Clear digits](https://leetcode.com/problems/clear-digits/)                                                                                               |                        [🦀](src/problems/p3174_clear_digits.rs)                         |
+| 🟠 3208. [Alternating Groups II](https://leetcode.com/problems/alternating-groups-ii/)                                                                             |                    [🦀](src/problems/p3208_alternating_groups_ii.rs)                    |
 | 🟢 3270. [Find the Key of the Numbers](https://leetcode.com/problems/find-the-key-of-the-numbers/)                                                                 |                 [🦀](src/problems/p3270_find_the_key_of_the_numbers.rs)                 |
 
 ## How to add a new problem

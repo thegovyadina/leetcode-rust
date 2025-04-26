@@ -4,6 +4,8 @@
 //!
 //! Link: https://leetcode.com/problems/design-linked-list/
 
+#![allow(dead_code)]
+
 struct Node {
     val: i32,
     next: Option<Box<Node>>,
