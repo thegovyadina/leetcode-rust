@@ -21,12 +21,12 @@ impl Solution {
 
         for i in 1..=n {
             for j in 1..=k.min(i) {
-                // The number of ways to arrange i sticks with j visible
-                // is the sum of the number of ways to arrange (i-1) sticks
-                // with (j-1) visible and the number of ways to arrange (i-1) sticks
-                // with j visible, multiplied by (i-1) because we can place the new stick
-                // in any of the (i-1) positions.
-                // Convert to i64 to avoid overflow during multiplication.
+                // The number of ways to arrange `i` sticks with `j` visible
+                // is the sum of the number of ways to arrange `(i-1)` sticks
+                // with `(j-1)` visible and the number of ways to arrange `(i-1)` sticks
+                // with `j` visible, multiplied by `(i-1)` because we can place the new stick
+                // in any of the `(i-1)` positions.
+                // Convert to `i64` to avoid overflow during multiplication.
                 dp[i][j] = (dp[i - 1][j - 1] + ((i - 1) as i64 * dp[i - 1][j])) % MOD;
             }
         }
