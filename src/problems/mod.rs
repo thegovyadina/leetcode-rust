@@ -8,6 +8,7 @@ pub mod p0096_unique_binary_search_trees;
 pub mod p0126_word_ladder_ii;
 pub mod p0215_kth_largest_element_in_an_array;
 pub mod p0227_basic_calculator_2;
+pub mod p0263_ugly_number;
 pub mod p0504_base_7;
 pub mod p0552_student_attendance_record_ii;
 pub mod p0645_set_mismatch;
