@@ -32,4 +32,5 @@ pub mod p2940_find_building_where_alice_and_bob_can_meet;
 pub mod p3021_alice_and_bob_playing_flower_game;
 pub mod p3174_clear_digits;
 pub mod p3208_alternating_groups_ii;
+pub mod p3212_count_submatrices_with_equal_frequency_of_x_and_y;
 pub mod p3270_find_the_key_of_the_numbers;
