@@ -8,6 +8,7 @@ pub mod p0126_word_ladder_ii;
 pub mod p0215_kth_largest_element_in_an_array;
 pub mod p0227_basic_calculator_2;
 pub mod p0504_base_7;
+pub mod p0552_student_attendance_record_ii;
 pub mod p0645_set_mismatch;
 pub mod p0707_design_linked_list;
 pub mod p0797_all_paths_from_source_to_target;
