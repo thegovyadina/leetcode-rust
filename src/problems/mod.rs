@@ -3,6 +3,7 @@ pub mod p0013_roman_to_integer;
 pub mod p0020_valid_parentheses;
 pub mod p0021_merge_two_sorted_lists;
 pub mod p0033_search_in_rotated_sorted_array;
+pub mod p0039_combination_sum;
 pub mod p0096_unique_binary_search_trees;
 pub mod p0126_word_ladder_ii;
 pub mod p0215_kth_largest_element_in_an_array;
