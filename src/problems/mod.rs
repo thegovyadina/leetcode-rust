@@ -20,6 +20,7 @@ pub mod p0957_prison_cells_after_n_days;
 pub mod p1137_nth_tribonacci_number;
 pub mod p1431_kids_with_the_greatest_number_of_candies;
 pub mod p1464_maximum_product_of_two_elements_in_an_array;
+pub mod p1599_maximum_profit_of_operating_a_centennial_wheel;
 pub mod p1784_check_if_binary_string_has_at_most_one_segment_of_ones;
 pub mod p1866_number_of_ways_to_rearrange_sticks_with_k_sticks_visible;
 pub mod p1876_substrings_of_size_three_with_distinct_characters;
