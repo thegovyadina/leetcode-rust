@@ -15,6 +15,7 @@ pub mod p0645_set_mismatch;
 pub mod p0707_design_linked_list;
 pub mod p0797_all_paths_from_source_to_target;
 pub mod p0905_sort_array_by_parity;
+pub mod p0954_array_of_doubled_pairs;
 pub mod p0957_prison_cells_after_n_days;
 pub mod p1137_nth_tribonacci_number;
 pub mod p1431_kids_with_the_greatest_number_of_candies;
