@@ -31,6 +31,7 @@ pub mod p2270_number_of_ways_to_split_array;
 pub mod p2338_count_the_number_of_ideal_arrays;
 pub mod p2399_check_distances_between_same_letters;
 pub mod p2442_count_number_of_distinct_integers_after_reverse_operations;
+pub mod p2471_count_pairs_of_points_with_distance_k;
 pub mod p2471_minimum_number_of_operations_to_sort_a_binary_tree_by_level;
 pub mod p2933_high_access_employees;
 pub mod p2940_find_building_where_alice_and_bob_can_meet;
