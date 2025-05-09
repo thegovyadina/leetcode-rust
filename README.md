@@ -70,6 +70,7 @@ Note that this license applies only to my solution code and not to the LeetCode 
 | 🟠 3208. [Alternating Groups II](https://leetcode.com/problems/alternating-groups-ii/)                                                                             |                    [🦀](src/problems/p3208_alternating_groups_ii.rs)                    |
 | 🟠 3212. [Count Submatrices With Equal Frequency of X and Y](https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/)                     |      [🦀](src/problems/p3212_count_submatrices_with_equal_frequency_of_x_and_y.rs)      |
 | 🟢 3270. [Find the Key of the Numbers](https://leetcode.com/problems/find-the-key-of-the-numbers/)                                                                 |                 [🦀](src/problems/p3270_find_the_key_of_the_numbers.rs)                 |
+| 🟢 3289. [The Two Sneaky Numbers of Digitville](https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/)                                               |            [🦀](src/problems/p3289_the_two_sneaky_numbers_of_digitville.rs)             |
 
 ## How to add a new problem
 

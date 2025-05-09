@@ -36,3 +36,4 @@ pub mod p3174_clear_digits;
 pub mod p3208_alternating_groups_ii;
 pub mod p3212_count_submatrices_with_equal_frequency_of_x_and_y;
 pub mod p3270_find_the_key_of_the_numbers;
+pub mod p3289_the_two_sneaky_numbers_of_digitville;
