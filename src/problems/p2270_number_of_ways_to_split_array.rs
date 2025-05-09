@@ -10,6 +10,7 @@
 
 pub struct Solution;
 
+#[allow(clippy::needless_range_loop)]
 impl Solution {
     pub fn ways_to_split_array(nums: Vec<i32>) -> i32 {
         // Casting to i64 is required to avoid overflow leading to incorrect results
@@ -32,7 +33,7 @@ mod tests {
     use super::Solution;
 
     #[test]
-    fn ways_to_split_array() {
+    fn test_ways_to_split_array() {
         let test_cases = [
             (vec![10, 4, -8, 7], 2),
             (vec![2, 3, 1, 0], 2),
