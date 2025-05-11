@@ -13,6 +13,7 @@ pub mod p0504_base_7;
 pub mod p0552_student_attendance_record_ii;
 pub mod p0645_set_mismatch;
 pub mod p0707_design_linked_list;
+pub mod p0739_daily_temperatures;
 pub mod p0797_all_paths_from_source_to_target;
 pub mod p0905_sort_array_by_parity;
 pub mod p0954_array_of_doubled_pairs;
