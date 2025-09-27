@@ -42,8 +42,7 @@ mod tests {
             let result = Solution::kids_with_candies(candies.clone(), *extra_candies);
             assert_eq!(
                 result, *expected,
-                "Test case #{}: with candies={:?} extra_candies={:?}, expected {:?}, got {:?}",
-                idx, candies, extra_candies, expected, result
+                "Test case #{idx}: with candies={candies:?} extra_candies={extra_candies:?}, expected {expected:?}, got {result:?}"
             );
         }
     }

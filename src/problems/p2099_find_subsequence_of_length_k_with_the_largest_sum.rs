@@ -48,8 +48,7 @@ mod tests {
             let result = Solution::max_subsequence(nums.clone(), *k);
             assert_eq!(
                 result, *expected,
-                "Test case #{}: with nums={:?} and k={:?}, expected {:?}, got {:?}",
-                idx, nums, k, expected, result
+                "Test case #{idx}: with nums={nums:?} and k={k:?}, expected {expected:?}, got {result:?}"
             );
         }
     }

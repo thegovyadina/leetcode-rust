@@ -6,7 +6,7 @@
 //!
 //! ## Complexity Analysis
 //! - Time Complexity: O(m * n) - We iterate through each artifact and check
-//!         if all its cells have been dug up.
+//!   if all its cells have been dug up.
 //! - Space Complexity: O(m * n) - We use a HashSet to store dug positions,
 pub struct Solution;
 
@@ -64,8 +64,7 @@ mod tests {
             let result = Solution::dig_artifacts(*n, artifacts.clone(), dig.clone());
             assert_eq!(
                 result, *expected,
-                "Test case #{}: with n {:?}, artifacts {:?}, dig {:?}, expected {:?}, got {:?}",
-                idx, n, artifacts, dig, expected, result
+                "Test case #{idx}: with n {n:?}, artifacts {artifacts:?}, dig {dig:?}, expected {expected:?}, got {result:?}"
             );
         }
     }

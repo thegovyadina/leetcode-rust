@@ -34,8 +34,7 @@ mod tests {
             let result = Solution::min_time_to_type(input.to_string());
             assert_eq!(
                 result, *expected,
-                "Test case #{}: with input {:?}, expected {:?}, got {:?}",
-                idx, input, expected, result
+                "Test case #{idx}: with input {input:?}, expected {expected:?}, got {result:?}"
             );
         }
     }

@@ -7,7 +7,7 @@
 //! ## Complexity Analysis
 //! - Time Complexity: O(log n) - We repeatedly divide the number by 7 until it becomes 0.
 //! - Space Complexity: O(1) - We use a constant amount of extra space
-//!         for the result string and variables.
+//!   for the result string and variables.
 
 pub struct Solution;
 
@@ -49,8 +49,7 @@ mod tests {
             let result = Solution::convert_to_base7(*input);
             assert_eq!(
                 result, *expected,
-                "Test case #{}: with input {:?}, expected {:?}, got {:?}",
-                idx, input, expected, result
+                "Test case #{idx}: with input {input:?}, expected {expected:?}, got {result:?}"
             );
         }
     }

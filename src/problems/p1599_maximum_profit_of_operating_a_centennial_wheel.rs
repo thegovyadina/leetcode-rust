@@ -103,8 +103,7 @@ mod tests {
             );
             assert_eq!(
                 result, *expected,
-                "Test case #{}: with customers {:?}, boarding_cost={:?}, running_cost={:?}, expected {:?}, got {:?}",
-                idx, customers, boarding_cost, running_cost, expected, result
+                "Test case #{idx}: with customers {customers:?}, boarding_cost={boarding_cost:?}, running_cost={running_cost:?}, expected {expected:?}, got {result:?}"
             );
         }
     }

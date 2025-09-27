@@ -6,7 +6,7 @@
 //!
 //! ## Complexity Analysis
 //! - Time Complexity: O(1) - The solution runs in constant time since it only involves basic
-//!         arithmetic operations.
+//!   arithmetic operations
 //! - Space Complexity: O(1) - The solution uses a constant amount of space for variables.
 
 pub struct Solution;
@@ -38,8 +38,7 @@ mod tests {
             let result = Solution::flower_game(*n, *m);
             assert_eq!(
                 result, *expected,
-                "Test case #{}: with n={:?}, m={:?}, expected {:?}, got {:?}",
-                idx, n, m, expected, result
+                "Test case #{idx}: with n={n:?}, m={m:?}, expected {expected:?}, got {result:?}"
             );
         }
     }

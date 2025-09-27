@@ -7,7 +7,7 @@
 //! ## Complexity Analysis
 //! - Time Complexity: O(2^n) - In the worst case, we may explore all paths in a complete graph.
 //! - Space Complexity: O(n) - The maximum depth of the recursion stack is `n`,
-//!         where `n` is the number of nodes in the graph.
+//!   where `n` is the number of nodes in the graph.
 
 pub struct Solution;
 
@@ -78,8 +78,7 @@ mod tests {
             let result = Solution::all_paths_source_target(input.clone());
             assert_eq!(
                 result, *expected,
-                "Test case #{}: with input {:?}, expected {:?}, got {:?}",
-                idx, input, expected, result
+                "Test case #{idx}: with input {input:?}, expected {expected:?}, got {result:?}"
             );
         }
     }

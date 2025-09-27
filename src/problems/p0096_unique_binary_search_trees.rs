@@ -7,7 +7,7 @@
 //! ## Complexity Analysis
 //! - Time Complexity: O(n^2) - We use a nested loop to calculate the number of unique BSTs.
 //! - Space Complexity: O(n) - We use a vector to store the number of unique BSTs
-//!         for each number of nodes.
+//!   for each number of nodes.
 pub struct Solution;
 
 impl Solution {
@@ -40,8 +40,7 @@ mod tests {
             let result = Solution::num_trees(*input);
             assert_eq!(
                 result, *expected,
-                "Test case #{}: with input {:?}, expected {:?}, got {:?}",
-                idx, input, expected, result
+                "Test case #{idx}: with input {input:?}, expected {expected:?}, got {result:?}"
             );
         }
     }

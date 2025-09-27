@@ -70,8 +70,7 @@ mod tests {
                 Solution::check_distances(input_string.to_string(), input_distance.to_vec());
             assert_eq!(
                 result, *expected,
-                "Test case #{}: with input string {:?} and distance {:?}, expected {:?}, got {:?}",
-                idx, input_string, input_distance, expected, result
+                "Test case #{idx}: with input string {input_string:?} and distance {input_distance:?}, expected {expected:?}, got {result:?}"
             );
         }
     }

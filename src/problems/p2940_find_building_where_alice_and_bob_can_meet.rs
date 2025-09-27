@@ -131,8 +131,7 @@ mod tests {
             let result = Solution::leftmost_building_queries(heights.clone(), queries.clone());
             assert_eq!(
                 result, *expected,
-                "Test case #{}: with heights {:?}, queries {:?}, expected {:?}, got {:?}",
-                idx, heights, queries, expected, result
+                "Test case #{idx}: with heights {heights:?}, queries {queries:?}, expected {expected:?}, got {result:?}"
             );
         }
     }

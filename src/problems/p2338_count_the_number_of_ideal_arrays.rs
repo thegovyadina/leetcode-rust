@@ -13,25 +13,25 @@
 //! ### Strictly Increasing Arrays vs. Ideal Arrays
 //! In the context of this problem:
 //! - An **ideal array** is one where each element (except the first) is divisible
-//!         by the previous element. For example, [3, 3, 6, 6] is an ideal array
-//!         because each element (except the first) is divisible by the previous element.
+//!   by the previous element. For example, [3, 3, 6, 6] is an ideal array
+//!   because each element (except the first) is divisible by the previous element.
 //! - A **strictly increasing ideal array** is an ideal array where each element
-//!         is strictly greater than the previous element.
-//!         For example, [3, 6, 12, 24] is a strictly increasing ideal array.
+//!   is strictly greater than the previous element.
+//!   For example, [3, 6, 12, 24] is a strictly increasing ideal array.
 //!
 //! ### Explanation
 //! This optimized solution works in multiple steps:
 //! 1. **DP for Strictly Increasing Sequences**:
-//!         Instead of directly counting all ideal arrays, we first count
-//!         strictly increasing ideal arrays.
-//!         This significantly reduces the number of combinations we need to consider.
+//!    Instead of directly counting all ideal arrays, we first count
+//!    strictly increasing ideal arrays.
+//!    This significantly reduces the number of combinations we need to consider.
 //! 2. **Combinatorial Mathematics**:
-//!         The stars and bars theorem from combinatorics helps us calculate how many ways
-//!         we can place `n-1` identical objects into `len` distinct boxes, which represents
-//!         how many ways we can have a sequence with `len` unique values in an array of length `n`.
+//!    The stars and bars theorem from combinatorics helps us calculate how many ways
+//!    we can place `n-1` identical objects into `len` distinct boxes, which represents
+//!    how many ways we can have a sequence with `len` unique values in an array of length `n`.
 //! 3. **Optimization Bounds**:
-//!         The maximum number of unique elements in any ideal array is bounded by log₂(maxValue),
-//!         since each next value must be at least twice the previous one.
+//!    The maximum number of unique elements in any ideal array is bounded by log₂(maxValue),
+//!    since each next value must be at least twice the previous one.
 pub struct Solution;
 
 #[allow(clippy::needless_range_loop)]
@@ -179,8 +179,7 @@ mod tests {
             let result = Solution::ideal_arrays(*input_n, *input_max);
             assert_eq!(
                 result, *expected,
-                "Test case #{}: with input string {:?} and distance {:?}, expected {:?}, got {:?}",
-                idx, input_n, input_max, expected, result
+                "Test case #{idx}: with input string {input_n:?} and distance {input_max:?}, expected {expected:?}, got {result:?}"
             );
         }
     }

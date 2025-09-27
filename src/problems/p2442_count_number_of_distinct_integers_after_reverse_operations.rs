@@ -60,8 +60,7 @@ mod tests {
             let result = Solution::count_distinct_integers(input.clone());
             assert_eq!(
                 result, *expected,
-                "Test case #{}: with input {:?}, expected {:?}, got {:?}",
-                idx, input, expected, result
+                "Test case #{idx}: with input {input:?}, expected {expected:?}, got {result:?}"
             );
         }
     }

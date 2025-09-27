@@ -40,8 +40,7 @@ mod tests {
             let result = Solution::max_product(input.clone());
             assert_eq!(
                 result, *expected,
-                "Test case #{}: with nums={:?}, expected {:?}, got {:?}",
-                idx, input, expected, result
+                "Test case #{idx}: with nums={input:?}, expected {expected:?}, got {result:?}"
             );
         }
     }

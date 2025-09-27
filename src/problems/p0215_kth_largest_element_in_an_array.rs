@@ -37,8 +37,7 @@ mod tests {
             let result = Solution::find_kth_largest(input.clone(), *n);
             assert_eq!(
                 result, *expected,
-                "Test case #{}: with input {:?}, expected {:?}, got {:?}",
-                idx, input, expected, result
+                "Test case #{idx}: with input {input:?}, expected {expected:?}, got {result:?}"
             );
         }
     }

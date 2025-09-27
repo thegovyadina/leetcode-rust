@@ -7,7 +7,7 @@
 //! ## Complexity Analysis
 //! - Time Complexity: O(n + m) - We traverse the lists containing n and m elements exactly twice.
 //! - Space Complexity: O(min(n, m)) - The extra space required depends on the number of items
-//!         stored in the hash map, which is the size of the smaller list.
+//!   stored in the hash map, which is the size of the smaller list.
 pub struct Solution;
 
 impl Solution {
@@ -71,8 +71,7 @@ mod tests {
             let result = Solution::find_restaurant(list1_strings, list2_strings);
             assert_eq!(
                 result, expected_strings,
-                "Test case #{}: with list1 = {:?}, list2 = {:?}, expected {:?}, got {:?}",
-                idx, list1, list2, expected, result
+                "Test case #{idx}: with list1 = {list1:?}, list2 = {list2:?}, expected {expected:?}, got {result:?}"
             );
         }
     }

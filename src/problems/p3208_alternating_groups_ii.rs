@@ -5,9 +5,11 @@
 //! Link: https://leetcode.com/problems/alternating-groups-ii/
 //!
 //! ## Complexity Analysis
-//! - Time Complexity: O(n + k) - We traverse the list containing n elements and
-//!             extend it by k elements.
-//! - Space Complexity: O(n + k) - We use a vector to store the extended list.
+//! - Time Complexity:
+//!   O(n + k) - We traverse the list containing n elements and
+//!   extend it by k elements.
+//! - Space Complexity:
+//!   O(n + k) - We use a vector to store the extended list.
 
 pub struct Solution;
 
@@ -70,8 +72,7 @@ mod tests {
             let result = Solution::number_of_alternating_groups(colors.clone(), *k);
             assert_eq!(
                 result, *expected,
-                "Test case #{}: with colors {:?}, k={:?}, expected {:?}, got {:?}",
-                idx, colors, k, expected, result
+                "Test case #{idx}: with colors {colors:?}, k={k:?}, expected {expected:?}, got {result:?}"
             );
         }
     }

@@ -5,9 +5,11 @@
 //! Link: https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/
 //!
 //! ## Complexity Analysis
-//! - Time Complexity: O(n^2 * m) - We iterate through each row and each column, and for each cell,
-//!         we perform a constant-time operation to update the dynamic programming state.
-//! - Space Complexity: O(m) - We use a vector of size m to store the dynamic programming state.
+//! - Time Complexity:
+//!   O(n^2 * m) - We iterate through each row and each column, and for each cell,
+//!   we perform a constant-time operation to update the dynamic programming state.
+//! - Space Complexity:
+//!   O(m) - We use a vector of size m to store the dynamic programming state.
 
 pub struct Solution;
 
@@ -68,8 +70,7 @@ mod tests {
             let result = Solution::number_of_submatrices(input.clone());
             assert_eq!(
                 result, *expected,
-                "Test case #{}: with input {:?}, expected {:?}, got {:?}",
-                idx, input, expected, result
+                "Test case #{idx}: with input {input:?}, expected {expected:?}, got {result:?}"
             );
         }
     }

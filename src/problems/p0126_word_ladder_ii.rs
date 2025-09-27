@@ -6,10 +6,10 @@
 //!
 //! ## Complexity Analysis
 //! - Time Complexity: O(n * m^2) - We iterate through the list containing n words,
-//!         where m is the length of each word. For each word, we generate m patterns,
-//!         and for each pattern, we check all n words to find neighbors.
+//!   where m is the length of each word. For each word, we generate m patterns,
+//!   and for each pattern, we check all n words to find neighbors.
 //! - Space Complexity: O(n * m) - We use a map to store the patterns and
-//!         their corresponding indices, which can grow linearly with the number of words.
+//!   their corresponding indices, which can grow linearly with the number of words.
 pub struct Solution;
 
 use std::collections::{HashMap, VecDeque};
@@ -213,8 +213,7 @@ mod tests {
                 Solution::find_ladders(begin_word.to_string(), end_word.to_string(), word_list_str);
             assert_eq!(
                 result, *expected,
-                "Test case #{}: with begin_word {:?}, end_word {:?}, word_list {:?}, expected {:?}, got {:?}",
-                idx, begin_word, end_word, word_list, expected, result
+                "Test case #{idx}: with begin_word {begin_word:?}, end_word {end_word:?}, word_list {word_list:?}, expected {expected:?}, got {result:?}"
             );
         }
     }

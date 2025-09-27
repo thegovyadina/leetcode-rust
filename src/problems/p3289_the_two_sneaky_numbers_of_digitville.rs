@@ -90,13 +90,11 @@ mod tests {
             expected_result2.sort();
             assert_eq!(
                 result, expected_result,
-                "Test case for the main Solution #{}: with input {:?}, expected {:?}, got {:?}",
-                idx, input, expected, result
+                "Test case for the main Solution #{idx}: with input {input:?}, expected {expected:?}, got {result:?}"
             );
             assert_eq!(
                 result2, expected_result2,
-                "Test case for the HashSetSolution #{}: with input {:?}, expected {:?}, got {:?}",
-                idx, input, expected, result2
+                "Test case for the HashSetSolution #{idx}: with input {input:?}, expected {expected:?}, got {result2:?}"
             );
         }
     }

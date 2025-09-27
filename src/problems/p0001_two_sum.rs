@@ -6,9 +6,9 @@
 //!
 //! ## Complexity Analysis
 //! - Time Complexity: O(n) - We traverse the list containing n elements exactly twice.
-//!         Since the hash table look-up time is O(1), the overall time complexity is O(n).
+//!   Since the hash table look-up time is O(1), the overall time complexity is O(n).
 //! - Space Complexity: O(n) - The extra space required depends on the number of items
-//!         stored in the hash table.
+//!   stored in the hash table.
 
 pub struct Solution;
 

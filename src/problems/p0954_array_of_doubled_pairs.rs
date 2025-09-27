@@ -85,8 +85,7 @@ mod tests {
             let result = Solution::can_reorder_doubled(arr.clone());
             assert_eq!(
                 result, *expected,
-                "Test case #{}: with cells {:?}, expected {:?}, got {:?}",
-                idx, arr, expected, result
+                "Test case #{idx}: with cells {arr:?}, expected {expected:?}, got {result:?}"
             );
         }
     }

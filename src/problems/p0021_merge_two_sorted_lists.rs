@@ -7,7 +7,7 @@
 //! ## Complexity Analysis
 //! - Time Complexity: O(n) - We traverse both lists exactly once.
 //! - Space Complexity: O(1) - We use a constant amount of extra space
-//!         regardless of the input size.
+//!   regardless of the input size.
 pub struct Solution;
 
 // Definition for singly-linked list.
@@ -99,8 +99,7 @@ mod tests {
             let result_vec = list_to_vec(result);
             assert_eq!(
                 result_vec, *expected,
-                "Test case #{}: with input1 {:?}, input2 {:?}, expected {:?}, got {:?}",
-                idx, input1, input2, expected, result_vec
+                "Test case #{idx}: with input1 {input1:?}, input2 {input2:?}, expected {expected:?}, got {result_vec:?}"
             );
         }
     }

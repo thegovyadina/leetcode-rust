@@ -37,8 +37,7 @@ mod tests {
             let result = Solution::generate_key(*input1, *input2, *input3);
             assert_eq!(
                 result, *expected,
-                "Test case #{}: with input1 {:?}, {:?}, {:?}, expected {:?}, got {:?}",
-                idx, input1, input2, input3, expected, result
+                "Test case #{idx}: with input1 {input1:?}, {input2:?}, {input3:?}, expected {expected:?}, got {result:?}"
             );
         }
     }

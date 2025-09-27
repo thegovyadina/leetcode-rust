@@ -7,7 +7,7 @@
 //! ## Complexity Analysis
 //! - Time Complexity: O(log n) - We use binary search to find the target.
 //! - Space Complexity: O(1) - We use a constant amount of space for the pointers `first`,
-//!         `last`, and `middle`.
+//!   `last`, and `middle`.
 pub struct Solution;
 
 impl Solution {
@@ -57,8 +57,7 @@ mod tests {
             let result = Solution::search(input.clone(), *n);
             assert_eq!(
                 result, *expected,
-                "Test case #{}: with input {:?}, expected {:?}, got {:?}",
-                idx, input, expected, result
+                "Test case #{idx}: with input {input:?}, expected {expected:?}, got {result:?}"
             );
         }
     }

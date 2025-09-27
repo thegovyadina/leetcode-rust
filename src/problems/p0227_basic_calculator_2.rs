@@ -7,7 +7,7 @@
 //! ## Complexity Analysis
 //! - Time Complexity: O(n) - We iterate through the string once, processing each character.
 //! - Space Complexity: O(n) - We use a stack to store intermediate results,
-//!         which can grow linearly with the input size.
+//!   which can grow linearly with the input size.
 
 pub struct Solution;
 
@@ -68,8 +68,7 @@ mod tests {
             let result = Solution::calculate(input.to_string());
             assert_eq!(
                 result, *expected,
-                "Test case #{}: with input {:?}, expected {:?}, got {:?}",
-                idx, input, expected, result
+                "Test case #{idx}: with input {input:?}, expected {expected:?}, got {result:?}"
             );
         }
     }

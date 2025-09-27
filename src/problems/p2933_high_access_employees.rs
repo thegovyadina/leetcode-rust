@@ -126,11 +126,7 @@ mod tests {
             assert_eq!(
                 sorted_result.iter().collect::<HashSet<_>>(),
                 sorted_expected.iter().collect::<HashSet<_>>(),
-                "Test case #{}: with input {:?}, expected {:?}, got {:?}",
-                idx,
-                input,
-                expected,
-                result
+                "Test case #{idx}: with input {input:?}, expected {expected:?}, got {result:?}"
             );
         }
     }

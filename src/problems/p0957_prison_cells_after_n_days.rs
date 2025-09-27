@@ -6,7 +6,7 @@
 //!
 //! ## Complexity Analysis
 //! - Time Complexity: O(1) - We have a fixed number of cells (8),
-//!         and the maximum number of unique states is 64.
+//!   and the maximum number of unique states is 64.
 //! - Space Complexity: O(1) - We use a limited amount of space for the state map.
 //!
 //! ## See Also
@@ -122,8 +122,7 @@ mod tests {
             let result = Solution::prison_after_n_days(cells.clone(), *n);
             assert_eq!(
                 result, *expected,
-                "Test case #{}: with cells {:?}, n={:?}, expected {:?}, got {:?}",
-                idx, cells, n, expected, result
+                "Test case #{idx}: with cells {cells:?}, n={n:?}, expected {expected:?}, got {result:?}"
             );
         }
     }

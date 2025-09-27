@@ -6,7 +6,7 @@
 //!
 //! ## Complexity Analysis
 //! - Time Complexity: O(n*k) - We iterate through the list of coordinates, and for each coordinate,
-//!         we check all possible values for x_xor from 0 to k.
+//!   we check all possible values for x_xor from 0 to k.
 //! - Space Complexity: O(n) - We use a HashMap to store the frequency of each coordinate.
 
 pub struct Solution;
@@ -62,8 +62,7 @@ mod tests {
             let result = Solution::count_pairs(coordinates.clone(), *k);
             assert_eq!(
                 result, *expected,
-                "Test case #{}: with coordinates {:?}, k={:?}, expected {:?}, got {:?}",
-                idx, coordinates, k, expected, result
+                "Test case #{idx}: with coordinates {coordinates:?}, k={k:?}, expected {expected:?}, got {result:?}"
             );
         }
     }

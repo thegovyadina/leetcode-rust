@@ -184,14 +184,12 @@ mod tests {
             let result = Solution::check_record(*input);
             assert_eq!(
                 result, *expected,
-                "Test case #{}: with input {:?}, expected {:?}, got {:?}",
-                idx, input, expected, result
+                "Test case #{idx}: with input {input:?}, expected {expected:?}, got {result:?}"
             );
             let result = SlowSolution::check_record(*input);
             assert_eq!(
                 result, *expected,
-                "Test case for SlowSolution #{}: with input {:?}, expected {:?}, got {:?}",
-                idx, input, expected, result
+                "Test case for SlowSolution #{idx}: with input {input:?}, expected {expected:?}, got {result:?}"
             );
         }
     }

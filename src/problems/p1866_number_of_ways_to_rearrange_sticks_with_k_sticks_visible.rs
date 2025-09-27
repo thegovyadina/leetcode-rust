@@ -46,8 +46,7 @@ mod tests {
             let result = Solution::rearrange_sticks(*n, *k);
             assert_eq!(
                 result, *expected,
-                "Test case #{}: with n={:?}, k={:?}, expected {:?}, got {:?}",
-                idx, n, k, expected, result
+                "Test case #{idx}: with n={n:?}, k={k:?}, expected {expected:?}, got {result:?}"
             );
         }
     }

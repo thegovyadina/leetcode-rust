@@ -6,7 +6,7 @@
 //!
 //! ## Complexity Analysis
 //! - Time Complexity: O(log n) - We repeatedly divide the number by 2, 3, and 5
-//!         until it becomes 1 or less.
+//!   until it becomes 1 or less.
 //! - Space Complexity: O(1) - We use a constant amount of space for the result.
 
 pub struct Solution;
@@ -41,8 +41,7 @@ mod tests {
             let result = Solution::is_ugly(*input);
             assert_eq!(
                 result, *expected,
-                "Test case #{}: with input {:?}, expected {:?}, got {:?}",
-                idx, input, expected, result
+                "Test case #{idx}: with input {input:?}, expected {expected:?}, got {result:?}"
             );
         }
     }

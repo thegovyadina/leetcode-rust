@@ -6,7 +6,7 @@
 //!
 //! ## Complexity Analysis
 //! - Time Complexity: O(n * log(n)) - We perform a level order traversal of the tree,
-//!          and for each level, we sort the values.
+//!   and for each level, we sort the values.
 //! - Space Complexity: O(n) - We use a queue to perform level order traversal.
 
 pub struct Solution;
@@ -161,8 +161,7 @@ mod tests {
             let result = Solution::minimum_operations(tree);
             assert_eq!(
                 result, *expected,
-                "Test case #{}: with input {:?}, expected {}, got {}",
-                idx, input, expected, result
+                "Test case #{idx}: with input {input:?}, expected {expected}, got {result}"
             );
         }
     }
