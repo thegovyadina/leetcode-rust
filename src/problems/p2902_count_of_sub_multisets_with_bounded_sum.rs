@@ -61,8 +61,8 @@
 //! 1. Handle Zeros Specially
 //! 2. Track Maximum Meaningful Sum
 //! 3. The Two-Phase Magic
-//! 3.1. Phase 1: Add Unlimited Uses (Unbounded Knapsack)
-//! 3.2. Phase 2: Remove Excess Uses (Bounded Correction)
+//!    3.1. Phase 1: Add Unlimited Uses (Unbounded Knapsack)
+//!    3.2. Phase 2: Remove Excess Uses (Bounded Correction)
 //! 4. Count Final Answer
 pub struct Solution;
 
@@ -144,10 +144,11 @@ impl Solution {
         // 4. Count Final Answer
         // Sum results in range [l, r]
         let l_usize = l as usize;
-        let mut result = 0;
-        for i in l_usize..=std::cmp::min(r_usize, ms - 1) {
-            result = (result + dp[i]) % MOD;
-        }
+        let result = dp
+            .iter()
+            .skip(l_usize)
+            .take(std::cmp::min(r_usize, ms - 1).saturating_sub(l_usize) + 1)
+            .fold(0, |acc, &val| (acc + val) % MOD);
 
         result
     }
