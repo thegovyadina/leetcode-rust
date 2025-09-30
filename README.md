@@ -79,6 +79,14 @@ Note that this license applies only to my solution code and not to the LeetCode 
 | 🟢 3270. [Find the Key of the Numbers](https://leetcode.com/problems/find-the-key-of-the-numbers/)                                                                 |                 [🦀](src/problems/p3270_find_the_key_of_the_numbers.rs)                 |                                    |
 | 🟢 3289. [The Two Sneaky Numbers of Digitville](https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/)                                               |            [🦀](src/problems/p3289_the_two_sneaky_numbers_of_digitville.rs)             |                                    |
 
+## Development Setup
+
+After cloning the repository, run this command to set up Git hooks:
+
+```bash
+git config core.hooksPath .githooks
+```
+
 ## How to add a new problem
 
 1. Create a new file in `src/problems/` directory with the name of the problem in snake_case with format
