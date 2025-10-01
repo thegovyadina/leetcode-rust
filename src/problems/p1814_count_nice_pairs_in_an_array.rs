@@ -19,8 +19,7 @@ impl Solution {
         const MOD: i64 = 1_000_000_007;
 
         // For comparison of the loop-based and string-based reverting functions,
-        // see benchmark /benches/p1814_benchmark.rs
-        // You can execute the benchmarks by running `cargo bench`
+        // see benchmark `/benches/p1814.rs`
         fn rev(mut num: i32) -> i32 {
             let mut result = 0;
             while num > 0 {
