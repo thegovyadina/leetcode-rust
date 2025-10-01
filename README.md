@@ -5,7 +5,7 @@
 
 
 <!-- LEETCODE-BADGES:START -->
-[![Easy](https://img.shields.io/badge/Easy-20-brightgreen)](#problems) [![Medium](https://img.shields.io/badge/Medium-21-orange)](#problems) [![Hard](https://img.shields.io/badge/Hard-6-red)](#problems) [![Total](https://img.shields.io/badge/Total-47-blue)](#problems)
+[![Easy](https://img.shields.io/badge/Easy-20-brightgreen)](#problems) [![Medium](https://img.shields.io/badge/Medium-22-orange)](#problems) [![Hard](https://img.shields.io/badge/Hard-6-red)](#problems) [![Total](https://img.shields.io/badge/Total-48-blue)](#problems)
 <!-- LEETCODE-BADGES:END -->
 
 ## Disclaimer
