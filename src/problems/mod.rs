@@ -1,4 +1,5 @@
 pub mod p0001_two_sum;
+pub mod p0003_longest_substring_without_repeating_characters;
 pub mod p0013_roman_to_integer;
 pub mod p0020_valid_parentheses;
 pub mod p0021_merge_two_sorted_lists;
