@@ -58,6 +58,7 @@ Note that this license applies only to my solution code and not to the LeetCode 
 | 🟢 1464. [Maximum Product of Two Elements in an Array](https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/)                                 |         [🦀](src/problems/p1464_maximum_product_of_two_elements_in_an_array.rs)         |                                    |
 | 🟠 1599. [Maximum Profit of Operating a Centennial Wheel](https://leetcode.com/problems/maximum-profit-of-operating-a-centennial-wheel/)                           |       [🦀](src/problems/p1599_maximum_profit_of_operating_a_centennial_wheel.rs)        |                                    |
 | 🟢 1784. [Check if Binary String Has at Most One Segment of Ones](https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/)           |   [🦀](src/problems/p1784_check_if_binary_string_has_at_most_one_segment_of_ones.rs)    |                                    |
+| 🟠 1814. [Count Nice Pairs in an Array](https://leetcode.com/problems/count-nice-pairs-in-an-array/)                                                               |                [🦀](src/problems/p1814_count_nice_pairs_in_an_array.rs)                 | HashMap                            |
 | 🔴 1866. [Number of Ways to Rearrange Sticks With K Sticks Visible](https://leetcode.com/problems/number-of-ways-to-rearrange-sticks-with-k-sticks-visible/)       |  [🦀](src/problems/p1866_number_of_ways_to_rearrange_sticks_with_k_sticks_visible.rs)   | Dynamic Programming                |
 | 🟢 1876. [Substrings of Size Three with Distinct Characters](https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/)                     |      [🦀](src/problems/p1876_substrings_of_size_three_with_distinct_characters.rs)      |                                    |
 | 🟢 1974. [Minimum Time to Type Word Using Special Typewriter](https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/)                   |    [🦀](src/problems/p1974_minimimum_time_to_type_word_using_special_typewriter.rs)     |                                    |
@@ -139,3 +140,33 @@ pub mod pNNNN_problem_title;
 4. Add the problem to the [Problems](#problems) table in `README.md`
 5. Run the tests with `cargo test` to make sure everything is working.
 6. Commit your changes.
+
+## Benchmarking
+
+For benchmarking, the `criterion` crate is used.
+
+To add a new benchmark, create a new file in the [/benches/](/benches/) directory and add a new `[[branch]]` section
+in [Cargo.toml](Cargo.toml).
+
+To execute a benchmark, run one of the following commands:
+
+```bash
+# Run all benchmarks
+cargo bench
+
+# Run all benchmarks defined in a specific file
+cargo bench --bench p1814
+```
+
+Also, you can run them more precisely using special syntax. E.g.:
+
+```
+# Run only the benchmark for the specific number 1234
+cargo bench --bench p1814 "loop_based_1234"
+
+# Run all loop-based benchmarks
+cargo bench --bench p1814 "loop_based_.*"
+```
+
+See the [Criterion documentation](https://bheisler.github.io/criterion.rs/book/user_guide/known_limitations.html)
+for more information or run `cargo help bench`.

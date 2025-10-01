@@ -4,4 +4,9 @@ version = "0.1.0"
 license = "MIT"
 edition = "2021"
 
-[dependencies]
+[dev-dependencies]
+criterion = "0.7"
+
+[[bench]]
+name = "p1814"
+harness = false
