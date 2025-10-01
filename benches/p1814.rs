@@ -37,11 +37,11 @@ fn bench_rev_implementations(c: &mut Criterion) {
     let test_numbers = [42, 1234, 9876543, 1_000_000_000];
 
     for &num in &test_numbers {
-        group.bench_function(format!("loop_based_{}", num), |b| {
+        group.bench_function(format!("loop_based_{num}"), |b| {
             b.iter(|| rev_loop(black_box(num)))
         });
 
-        group.bench_function(format!("string_based_{}", num), |b| {
+        group.bench_function(format!("string_based_{num}"), |b| {
             b.iter(|| rev_string(black_box(num)))
         });
     }
