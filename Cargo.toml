@@ -10,3 +10,11 @@ criterion = "0.7"
 [[bench]]
 name = "p1814"
 harness = false
+
+[[bench]]
+name = "p1910"
+harness = false
+
+[[bench]]
+name = "p1910_memory"
+harness = false

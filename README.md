@@ -62,6 +62,7 @@ Note that this license applies only to my solution code and not to the LeetCode 
 | 🟠 1814. [Count Nice Pairs in an Array](https://leetcode.com/problems/count-nice-pairs-in-an-array/)                                                               |                [🦀](src/problems/p1814_count_nice_pairs_in_an_array.rs)                 | HashMap                            |
 | 🔴 1866. [Number of Ways to Rearrange Sticks With K Sticks Visible](https://leetcode.com/problems/number-of-ways-to-rearrange-sticks-with-k-sticks-visible/)       |  [🦀](src/problems/p1866_number_of_ways_to_rearrange_sticks_with_k_sticks_visible.rs)   | Dynamic Programming                |
 | 🟢 1876. [Substrings of Size Three with Distinct Characters](https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/)                     |      [🦀](src/problems/p1876_substrings_of_size_three_with_distinct_characters.rs)      |                                    |
+| 🟢 1910. [Remove All Occurrences of a Substring](https://leetcode.com/problems/remove-all-occurrences-of-a-substring/)                                             |            [🦀](src/problems/p1910_remove_all_occurrences_of_a_substring.rs)            | Stack                              |
 | 🟢 1974. [Minimum Time to Type Word Using Special Typewriter](https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/)                   |    [🦀](src/problems/p1974_minimimum_time_to_type_word_using_special_typewriter.rs)     |                                    |
 | 🟢 2099. [Find Subsequence of Length K With the Largest Sum](https://leetcode.com/problems/find-subsequence-of-length-k-with-the-largest-sum/)                     |      [🦀](src/problems/p2099_find_subsequence_of_length_k_with_the_largest_sum.rs)      |                                    |
 | 🟠 2201. [Count Artifacts That Can Be Extracted](https://leetcode.com/problems/count-artifacts-that-can-be-extracted/)                                             |            [🦀](src/problems/p2201_count_artifacts_that_can_be_extracted.rs)            |                                    |
@@ -87,6 +88,13 @@ After cloning the repository, run this command to set up Git hooks:
 
 ```bash
 git config core.hooksPath .githooks
+```
+
+If you want to run memory benchmarks, you need to install `valgrind` and `massif-visualizer` on your system.
+On Ubuntu, you can do this with:
+
+```bash
+sudo apt install valgrind massif-visualizer
 ```
 
 ## How to add a new problem
@@ -146,7 +154,7 @@ pub mod pNNNN_problem_title;
 
 For benchmarking, the `criterion` crate is used.
 
-To add a new benchmark, create a new file in the [/benches/](/benches/) directory and add a new `[[branch]]` section
+To add a new benchmark, create a new file in the [./benches/](./benches/) directory and add a new `[[branch]]` section
 in [Cargo.toml](Cargo.toml).
 
 To execute a benchmark, run one of the following commands:
@@ -171,3 +179,35 @@ cargo bench --bench p1814 "loop_based_.*"
 
 See the [Criterion documentation](https://bheisler.github.io/criterion.rs/book/user_guide/known_limitations.html)
 for more information or run `cargo help bench`.
+
+## Memory profiling
+
+For memory profiling, create a new file in the [/benches/](/benches/) directory and use `IMPL` environment variable to
+specify implementations to profile. See [./benches/p1910_memory.rs](./benches/p1910_memory.rs) for an example.
+Add a new `[[bench]]` section in [Cargo.toml](Cargo.toml) to define the benchmark.
+
+To run a memory benchmark, execute the following command:
+
+```bash
+. ./profile.sh <benchmark_name> <implementation_ids>
+```
+
+The script accepts the following parameters:
+
+- `<benchmark_name>`: Name of the benchmark file without the `.rs` extension (e.g., `p1910_memory`)
+- `<implementation_ids>`: Space-separated list of implementation IDs to profile (e.g., `1 2 3`)
+
+### Example usage
+
+To compare memory usage between implementation 1 and 2 of the `p1910_memory` benchmark:
+
+```bash
+. ./profile.sh p1910_memory 1 2
+```
+
+This will:
+
+1. Run each implementation through Valgrind's Massif tool
+2. Generate memory profile data in the `./tmp/` directory
+3. Create output files like and `p1910_memory_massif_1.out``p1910_memory_profile_1.txt`
+4. Visualize the profiles using massif-visualizer: `massif-visualizer tmp/p1910_memory_massif_1.out`

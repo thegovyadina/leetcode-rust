@@ -28,7 +28,7 @@ mod tests {
     use super::Solution;
 
     #[test]
-    fn min_time_to_type() {
+    fn test_min_time_to_type() {
         let test_cases = [("abc", 5), ("bza", 7), ("zjpc", 34)];
         for (idx, (input, expected)) in test_cases.iter().enumerate() {
             let result = Solution::min_time_to_type(input.to_string());
